@@ -1,5 +1,5 @@
 # HTTP Status Cats app for Microsoft Teams
-*HTTP Status Lookup: Search Extension code example for MS Teams
+*HTTP Status Lookup: Search Extension code example for MS Teams*
 
 _Updated: September 2020_
 
@@ -7,6 +7,12 @@ This is a small sample code to build a message extention actions feature for Mic
 If you are familiar with Slack app development, this is equivalent to their Global Action / Slash Commands (although "/" search is not customizable in Teams).
 
 ![App in Teams](images/httpstatuscats-teams.png)
+
+#### Released package for side-loading
+
+The package you can just side-load to yout MS Team client is available in [**Release**](https://github.com/girliemac/msteams-httpstatuscats/releases) section!
+
+If you are interesting in developing your own MS Teams app by tweaking this app, or setting this app manually by yourself, read on!
 
 ## Overview: User - App Interactions
 
@@ -159,13 +165,24 @@ If fail,
 
 ---
 
-## Deployment
+## Deployment to Azure
 
-Glitch is a great tool that works as an web IDE, and Node.js app host for your developerment (Also, a great for me to show you how-to instructions without all other dependencies),
-however, this is not where you should host production apps.
+You can deploy the app to Azure in a few different ways:
 
-To deploy your app, see [Deploy your bot to Azure](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-tutorial-basic-deploy).
+1. From [Azure portal](https://portal.azure.com) and deploy by setting up an Web App service. ([Docs](https://docs.microsoft.com/en-us/azure/app-service/app-service-plan-manage))
+
+or
+
+2. Use [**Azure App Services** extension](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azureappservice) in VS Code. ([Docs](https://docs.microsoft.com/en-us/azure/developer/javascript/tutorial-vscode-azure-app-service-node-01))
+
+or
+
+3. Set up a GitHub Action to deploy to Azure!
+
+Of course, you can deploy to wherever you like other than Microsoft Azure!
 
 ---
 
 ## Learn more (TBD)
+ 
+I will add more learning resources

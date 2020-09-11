@@ -20,5 +20,7 @@ temp*
 .eslintrc
 .nvmrc
 
+### Azure
+.deployment
+
 ### App Settings
-.node-persist
