@@ -6,7 +6,7 @@ _Updated: September 2020_
 This is a small sample code to build a message extention actions feature for Microsoft Teams. 
 If you are familiar with Slack app development, this is equivalent to their Global Action / Slash Commands (although "/" search is not customizable in Teams).
 
-![App in Teams](https://cdn.glitch.com/519c8750-bd11-4fc6-ace0-665ad8e7c21b%2FScreen%20Shot%202020-09-04%20at%202.26.19%20PM.png?v=1599258892485)
+![App in Teams](images/httpstatuscats-teams.png)
 
 ## Overview: User - App Interactions
 
@@ -16,7 +16,7 @@ There are two places where a user action can be invoked; **Message Compose box**
 
 **Message Compose box**
 
-![compose box](https://cdn.glitch.com/519c8750-bd11-4fc6-ace0-665ad8e7c21b%2Fcompose.png?v=1599690005201)
+![compose box](images/compose.png)
 
 1. A user click the app icon (which is a monochrome/transparent background icon you define in App Studio) below the message compose box
 2. In the popup, the user search an query (*e.g.* stock ticker symbol). On keyup, the app shows the available results in the popup box
@@ -25,7 +25,7 @@ There are two places where a user action can be invoked; **Message Compose box**
 
 **Search / Command box**
 
-![search box](https://cdn.glitch.com/519c8750-bd11-4fc6-ace0-665ad8e7c21b%2Fsearch.png?v=1599690010340)
+![search box](images/search.png)
 
 1. A user click the app icon (which is a monochrome/transparent background icon you define in App Studio) below the message compose box
 2. In the popup, the user search an query (*e.g.* stock ticker symbol). On keyup, the app shows the available results in the popup box
@@ -55,10 +55,10 @@ You are required to provide the URLs of "Privacy statement" and "Terms of use". 
 
 > ⚠️ You don't actually need to create these files now, unless you want to build it manually without _App Studio_
 
-The _temas-app_ dir in this repo is nothing more than an example of what a zip file (to be installed in Teams app) contains.
+The _teams-package_ dir in this repo is nothing more than an example of what a zip file (to be installed in Teams app) contains.
 
 ```
-📁 teams-app
+📁 teams-package
     └── 📄 manifest.json
     └── 🖼 color.png (192x192)
     └── 🖼 outline.png (32x32)
@@ -68,7 +68,9 @@ See the instruction below to see how you can create your own app package using *
 
 ---
 
-If you want quickly try this app without running a server, try [the Glitch version of the code sample](https://glitch.com/~msteams-msg-extension-search)! 
+If you want quickly try this app without running own server, try [the Glitch version of the code sample](https://glitch.com/~msteams-msg-extension-search)! 
+
+Or fork this repo and try using a localhost tunnel like **ngrok**.
 
 ---
 
@@ -92,19 +94,19 @@ Open **App Studio** app in Teams client.
 
 Then, click **Create a new app** and fill out all the required fileds including the Bot names, descriptions, etc.
 
-At **App URLs** section, inlcude your privacy and TOU webpages. In this example, I am just using the placeholder URL, `https://example.com`.
+At **App URLs** section, inlcude a URL of your privacy and TOU webpages. 
 
-![App Studio](https://cdn.glitch.com/519c8750-bd11-4fc6-ace0-665ad8e7c21b%2Fsearch-app-studio-appdetails.png?v=1599773375275)
+![App Studio](images/search-app-studio-appdetails.png)
 
 #### Massaging Extensions config
 
 From the left menu, select Capabilities > **Massaging Extensions**.
 
-![App Studio](https://cdn.glitch.com/519c8750-bd11-4fc6-ace0-665ad8e7c21b%2Fsearch-app-studio-messageextensions-setup.png?v=1599773370094)
+![App Studio](images/search-app-studio-messageextensions-setup.png)
 
 Go ahead and click the button to set up.
 
-![App Studio](https://cdn.glitch.com/519c8750-bd11-4fc6-ace0-665ad8e7c21b%2Fsearch-app-studio-messageextensions-setup2.png?v=1599773372663)
+![App Studio](images/search-app-studio-messageextensions-setup2.png)
 
 Give it a name.
 
@@ -114,7 +116,7 @@ Copy the ID under your app name (something looks like `123xx567-123x-...`) and p
 
 Under **App Passwords**, generate new password, and copy it. Then paste it in your _.env_ file.
 
-![App Studio](https://cdn.glitch.com/519c8750-bd11-4fc6-ace0-665ad8e7c21b%2Fsearch-app-studio-messageextensions-endpoint.png?v=1599773366743)
+![App Studio](images/search-app-studio-messageextensions-endpoint.png)
 
 
 ##### Configure actions
@@ -127,11 +129,13 @@ In the dialog box -
 
 Select "Allow users to query your service for information..."
 
-![App Studio](https://cdn.glitch.com/519c8750-bd11-4fc6-ace0-665ad8e7c21b%2Fsearch-app-studio-messageextensions-newcommand1.png?v=1599773371993)
+![App Studio](images/search-app-studio-messageextensions-newcommand1.png)
 
 
 Then, fill out the command ID and title text. Also, a parameter name, its title, and the description. 
 Set the type of input as **text**, then click **Save**.
+
+![App Studio](images/search-app-studio-messageextensions-newcommand2.png)
 
 #### Finish creating the app manifest package
 
@@ -150,7 +154,7 @@ If fail,
 2. check if you point to the right endpoint. Check your server URL. (You can get your Glitch server URL by clicking the **Share** from the left side menu next to your avatar, then click **Live App** to get the base URL.)
 
 
-![App in Teams](https://cdn.glitch.com/519c8750-bd11-4fc6-ace0-665ad8e7c21b%2FScreen%20Shot%202020-09-04%20at%202.26.19%20PM.png?v=1599258892485)
+![App in Teams](images/httpstatuscats-teams.png)
 
 
 ---
