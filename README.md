@@ -8,13 +8,7 @@ If you are familiar with Slack app development, this is equivalent to their Glob
 
 ![App in Teams](images/httpstatuscats-teams.png)
 
-#### Released package for side-loading
-
-The package you can just side-load to yout MS Team client is available in [**Release**](https://github.com/girliemac/msteams-httpstatuscats/releases) section!
-
-If you are interesting in developing your own MS Teams app by tweaking this app, or setting this app manually by yourself, read on!
-
-## Overview: User - App Interactions
+## 🔭 Overview: User - App Interactions
 
 This sample shows you how to create an app using Messaging Extension, Messaging extension with search commands that allow your users to search external systems and insert the results of that search into a message
 
@@ -40,7 +34,7 @@ There are two places where a user action can be invoked; **Message Compose box**
 You can write code and make it work for both compose and search boxes or just one of them, by configuring in the manifest file. (In this tutorial, we create it using App Studio.)
 
 
-## Overview: Code
+## 🔭 Overview: Code
 
 ### 📄 index.js
 
@@ -80,19 +74,19 @@ Or fork this repo and try using a localhost tunnel like **ngrok**.
 
 ---
 
-## App Configuration
+## ⚙️ App Configuration
 
 Here's the step-by-step how to set up the ap and install on Teams-
 
-### Prerequisites
+### 📓 Prerequisites
 
-- Microsoft 365 developer tenant ([Sign up if you don't have one already!](https://developer.microsoft.com/en-us/microsoft-365/dev-program))
+- Microsoft 365 developer tenant ([See README2.md for the quick instruction!](README2.md))
 - App Studio - look for the app in Teams desktop client and install
 
 Also, in this example, I am using Express.js to run a Node server and handles the basic HTTP Post. 
 
 
-### Creating App Manifest with App Studio
+### 👩‍💻 Creating App Manifest with App Studio
 
 #### App Details
 
@@ -151,7 +145,7 @@ If you get any errors, go fix it, otherwise, click **Install** your client.
 
 You can also download the zip file that contains `manifest.json`, and two icon images to install later or distribute.
 
-## Test your app
+## 🤖 Test your app
 
 In your Teams client, try the search box and the message compose box. I hope it works!
 
