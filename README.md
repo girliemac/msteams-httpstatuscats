@@ -163,11 +163,11 @@ If fail,
 
 You can deploy the app to Azure in a few different ways:
 
-1. From [Azure portal](https://portal.azure.com) and deploy by setting up an Web App service. ([Docs](https://docs.microsoft.com/en-us/azure/app-service/app-service-plan-manage))
+1. From [Azure portal](https://portal.azure.com/?WT.mc_id=m365-0000-timura) and deploy by setting up an Web App service. ([Docs](https://docs.microsoft.com/azure/app-service/app-service-plan-manage?WT.mc_id=m365-0000-timura))
 
 or
 
-2. Use [**Azure App Services** extension](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azureappservice) in VS Code. ([Docs](https://docs.microsoft.com/en-us/azure/developer/javascript/tutorial-vscode-azure-app-service-node-01))
+2. Use [**Azure App Services** extension](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azureappservice&WT.mc_id=m365-0000-timura) in VS Code. ([Docs](https://docs.microsoft.com/azure/developer/javascript/tutorial-vscode-azure-app-service-node-01?WT.mc_id=m365-0000-timura))
 
 or
 
